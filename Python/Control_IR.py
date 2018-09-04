@@ -9,6 +9,7 @@ class ControlMQTT(object):
         try:
             self.client.connect(self.host)
         except ValueError as e:
+
             print("Algo salio mal :( error" + str(e))
 
 
@@ -19,7 +20,7 @@ class ControlMQTT(object):
             print("Error: Codigo y/o Nombre vacios")
             return 0
         else:
-            self.buttons[str(ButtonName)] = str(code)
+            self.buttons[str(ButtonName)] = code
             self.NumButtons+=1
             return 1 
 
