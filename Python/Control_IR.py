@@ -11,8 +11,9 @@ class ControlMQTT(object):
 
         finally:
             print("No se pudo realizar la conexion")
-        
 
+            
+    """ Metodos """
     def addButton(self,code=None, ButtonName=None):
         if code is None or ButtonName is None: 
             print("Error: Codigo y/o Nombre vacios")
