@@ -8,9 +8,9 @@ class ControlMQTT(object):
         self.host = host
         try:
             self.client.connect(self.host)
+        except ValueError as e:
+            print("Algo salio mal :( error" + str(e))
 
-        finally:
-            print("No se pudo realizar la conexion")
 
             
     """ Metodos """
