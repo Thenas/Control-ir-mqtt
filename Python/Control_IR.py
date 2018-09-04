@@ -7,12 +7,13 @@ class ControlMQTT(object):
         self.topic = topic
         self.host = host
         try:
-            client.Conect(host)
-        except expression as identifier:
-            print(identifier)
+            self.client.connect(self.host)
+
+        finally:
+            print("No se pudo realizar la conexion")
         
 
-    def addButton(code=None, ButtonName=None):
+    def addButton(self,code=None, ButtonName=None):
         if code is None or ButtonName is None: 
             print("Error: Codigo y/o Nombre vacios")
             return 0
@@ -21,8 +22,8 @@ class ControlMQTT(object):
             self.NumButtons+=1
             return 1 
 
-    def PushButton(ButtonName):
-        client.publish(self.topic,self.buttons[ButtonName])
+    def PushButton(self,ButtonName):
+        self.client.publish(self.topic,self.buttons[ButtonName])
      
     
         
