@@ -1,6 +1,6 @@
 import Control_IR as ctrl 
 
-inFocus = ctrl.ControlMQTT("broker.mqttdashboard.com",topic="testtopic/1")
-inFocus.addButton("0xE172E817","Apagar")
+inFocus = ctrl.ControlMQTT("broker.mqttdashboard.com",topic="test1")
+inFocus.addButton(0x20250AF,"Apagar")
 inFocus.PushButton("Apagar")
 print("ok")
