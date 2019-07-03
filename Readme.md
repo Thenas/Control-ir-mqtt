@@ -1,4 +1,4 @@
-Esp8266 como control IR por wifi
-recomendado http://www.hivemq.com/demos/websocket-client/
+Interfaz Wifi para un proyector utilizando MQTT y un ESP8266
+recomendado: http://www.hivemq.com/demos/websocket-client/
 
-## mplab e
+
